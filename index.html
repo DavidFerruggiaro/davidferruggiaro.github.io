@@ -192,7 +192,28 @@ nav {
   opacity: 0;
   animation: fadeUp 0.6s ease forwards 0.5s;
 }
+  
+.hero-cta-links {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  line-height: 1.7;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards 0.58s;
+}
 
+.hero-cta-links a {
+  color: var(--text-primary);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.2s ease;
+}
+
+.hero-cta-links a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
 .hero-meta {
   display: flex;
   gap: 2rem;
@@ -679,28 +700,36 @@ footer {
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-label">
-      <span class="status-dot"></span> Open to opportunities
+  <div class="hero-label">
+    <span class="status-dot"></span> Open to opportunities
+  </div>
+  <h1>I build <span class="highlight">AI systems</span><br>that solve real problems.</h1>
+  <p class="hero-sub">
+    Senior BI Engineering Specialist turned AI builder. 8+ years in enterprise consulting at Accenture, now shipping AI products that combine machine learning, domain expertise, and product thinking.
+  </p>
+  <p class="hero-cta-links">
+    Start with
+    <a href="https://github.com/DavidFerruggiaro/ai-personal-trainer" target="_blank">AI Personal Trainer</a>,
+    <a href="https://github.com/DavidFerruggiaro/training-intelligence-agent" target="_blank">Training Intelligence Agent</a>,
+    or
+    <a href="https://github.com/DavidFerruggiaro/f1-race-predictor" target="_blank">F1 Race Predictor</a>.
+    View all work on <a href="https://github.com/DavidFerruggiaro" target="_blank">GitHub</a>.
+  </p>
+  <div class="hero-meta">
+    <div class="meta-item">
+      <span class="meta-label">Currently</span>
+      <span class="meta-value">Accenture · GenAI Initiatives</span>
     </div>
-    <h1>I build <span class="highlight">AI systems</span><br>that solve real problems.</h1>
-    <p class="hero-sub">
-      Senior BI Engineering Specialist turned AI builder. 8+ years in enterprise consulting at Accenture, now shipping AI products that combine machine learning, domain expertise, and product thinking.
-    </p>
-    <div class="hero-meta">
-      <div class="meta-item">
-        <span class="meta-label">Currently</span>
-        <span class="meta-value">Accenture · GenAI Initiatives</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Focus Areas</span>
-        <span class="meta-value">AI Strategy · Product Analytics · ML/CV Systems</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Education</span>
-        <span class="meta-value">University of Michigan</span>
-      </div>
+    <div class="meta-item">
+      <span class="meta-label">Focus Areas</span>
+      <span class="meta-value">AI Strategy · Product Analytics · ML/CV Systems</span>
     </div>
-  </section>
+    <div class="meta-item">
+      <span class="meta-label">Education</span>
+      <span class="meta-value">University of Michigan</span>
+    </div>
+  </div>
+</section>
 
   <!-- PROJECTS -->
   <section id="projects">
@@ -759,27 +788,6 @@ footer {
         </div>
       </a>
 
-      <!-- AI Job Tracker -->
-      <div class="project-card reveal" style="--card-accent: #ff6b8a;">
-        <div class="project-content">
-          <div class="project-tag"><span class="tag-dot"></span> Coming Soon</div>
-          <h3 class="project-title">AI Job Tracker</h3>
-          <p class="project-desc">
-            An AI-powered job search assistant that tracks applications, surfaces relevant opportunities, and generates tailored outreach — built for the modern job hunt.
-          </p>
-          <div class="project-stack">
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">AI/ML</span>
-            <span class="stack-tag">In Development</span>
-          </div>
-          <div class="project-metrics">
-            <div class="metric">
-              <span class="metric-value">Soon</span>
-              <span class="metric-label">Status</span>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- F1 Race Predictor -->
       <a href="https://f1racepredictor.streamlit.app/" target="_blank" class="project-card reveal" style="--card-accent: var(--accent-4);">
@@ -809,7 +817,7 @@ footer {
       </a>
 
       <!-- AI Personal Trainer -->
-      <a href="#" class="project-card reveal" style="--card-accent: #7b8aff;">
+      <a href="https://github.com/DavidFerruggiaro/ai-personal-trainer" class="project-card reveal" style="--card-accent: #7b8aff;">
         <div class="project-content">
           <div class="project-tag"><span class="tag-dot" style="background: var(--accent-2);"></span> Computer Vision</div>
           <h3 class="project-title">AI Personal Trainer</h3>
